@@ -1,0 +1,30 @@
+.plan-table-main {
+  padding: 20px;
+
+  .plan-table-head {
+    background-color: #635eff;
+
+    h3,
+    p {
+      color: white
+    }
+  }
+
+  td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeMedium.css-1ex1afd-MuiTableCell-root {
+    border-right: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    border-bottom: 0 !important;
+  }
+
+  .css-rqglhn-MuiTable-root {
+    border: 1px solid lightgray
+  }
+
+  .even-row {
+    background-color: white;
+  }
+
+  .odd-row {
+    background-color: #F7F7FF;
+  }
+}

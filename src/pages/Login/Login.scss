@@ -1,0 +1,45 @@
+.login-main {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .login-inner {
+      width: 40%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      .login-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+
+        h4 {
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .first-login {
+        display: flex;
+        gap: 5px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .span.MuiTouchRipple-root.css-8je8zh-MuiTouchRipple-root{
+      background-color: #635DFE;
+      color: white;
+      border-radius: 50px;
+    }
+  }
+}

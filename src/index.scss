@@ -1,0 +1,1924 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+$basic_text_color: #007BAD;
+$box_shadow_main: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+body {
+  background-color: #f5f6f8;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+
+  .main-area {
+    display: flex;
+
+    .sidebar-area {
+      flex: 1.5;
+      // height: 100vh;
+      background-color: white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      .sidebar {
+        position: relative;
+
+        .top {
+          position: relative;
+
+          .logo {
+            width: 100%;
+
+            img {
+              max-width: 100%;
+              // width: 65%;
+              padding: 20px 30px;
+            }
+          }
+        }
+
+        .center {
+          position: relative;
+          padding-left: 30px;
+          line-height: 2.5;
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            & :hover {
+              color: blue;
+            }
+
+            li {
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              line-height: 45px;
+
+              a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+              }
+
+              .list-icon {
+                color: #84adea;
+              }
+
+              .sidebar-img-logo {
+                width: 16%;
+              }
+
+              .sidebar-img-logo-2 {
+                width: 10%;
+              }
+
+              span {
+                margin-left: 20px;
+                color: #000;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .dashboardContainer {
+      flex: 7;
+
+      .top-navbar {
+        position: relative;
+
+        .navbar-section {
+          display: flex;
+          justify-content: space-between;
+          align-items: end;
+          margin: 10px 40px;
+        }
+
+        .right-section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+
+          .profile-img {
+            width: 20%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .profile-heading {
+            position: relative;
+
+            .main-heading {
+              font-size: 14px;
+            }
+          }
+
+          .profile-user-name {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .content-section {
+        position: relative;
+        margin-top: 2%;
+
+        .stats-area {
+          display: flex;
+          margin: auto 3%;
+
+          .cards {
+            margin-right: 15px;
+            background: white;
+            width: 100%;
+            border-radius: 10px;
+            padding: 0px 15px;
+
+            .card-info {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 14px;
+              line-height: 0px;
+            }
+
+            img.stat-img {
+              width: 20%;
+              padding-top: 15px;
+            }
+
+            .amount {
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 0px;
+            }
+
+            .week-summary {
+              display: flex;
+              align-items: center;
+              line-height: 0px;
+
+              .percent {
+                display: flex;
+                align-items: center;
+                color: #35be5e;
+              }
+
+              .summery-days {
+                color: #b5b5b5;
+                padding-left: 15px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .shortcut-start {
+          position: relative;
+
+          .shortcut-inner {
+            background: white;
+            margin: 25px 50px;
+            padding: 15px;
+            border-radius: 15px;
+
+            .sc-heading {
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            .sci-cards {
+              position: relative;
+
+              .sci-area {
+                display: flex;
+
+                .sci-start {
+                  width: 100%;
+                  display: flex;
+
+                  .sci-icon {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0px;
+
+                    .shortcut-icon {
+                      width: 20%;
+                    }
+
+                    .sci-text {
+                      padding-left: 25px;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .reminders-start {
+          position: relative;
+
+          .reminder-inner {
+            background: white;
+            margin: 0px 50px;
+            padding: 10px 30px;
+            border-radius: 15px;
+
+            .reminder-top {
+              display: flex;
+              justify-content: space-between;
+
+              .ri-heading {
+                font-weight: bold;
+                font-size: 14px;
+              }
+
+              .ri-dates {
+                display: flex;
+                align-items: center;
+                background: #f5f6f8;
+                padding: 0px 15px;
+                border-radius: 15px;
+                font-size: 14px;
+                cursor: pointer;
+
+                .ri-dropdown-arrow {
+                  padding-left: 10px;
+                }
+              }
+            }
+
+            .ri-stats-list {
+              position: relative;
+
+              .risl-start {
+                display: flex;
+                margin: 20px auto;
+
+                .risl-img img {
+                  width: 50%;
+                }
+
+                .risl-brand {
+                  line-height: 0;
+                  padding-top: 8px;
+                  padding-left: 30px;
+
+                  .risl-invoice-quote {
+                    font-weight: bold;
+                    font-size: 14px;
+                  }
+                }
+
+                .risl-states {
+                  position: absolute;
+                  right: 0;
+                  background: #dcf8e4;
+                  line-height: 0;
+                  width: 8%;
+                  text-align: center;
+                  border-radius: 10px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // =================================== Transaction Page Style ==============================
+  .transaction-content {
+    position: relative;
+
+    .tc-inner {
+      position: relative;
+
+      .tc-inner-area {
+        display: flex;
+        margin: 40px;
+        background: white;
+        padding: 30px;
+        border-radius: 13px;
+
+        .tcia-left {
+          width: 50%;
+
+          .tcial-inner {
+            position: relative;
+
+            .tcial-top-heading {
+              position: relative;
+
+              .top-heading {
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .tcial-inner-section {
+                position: relative;
+                display: flex;
+
+                .tcialis-area-img {
+                  position: relative;
+
+                  img {
+                    max-width: 100%;
+                    padding: 15px 0;
+                  }
+                }
+
+                .tcialis-area-text {
+                  padding: 0 20px;
+
+                  .tcialista-th {
+                    font-size: 14px;
+                    font-weight: 600;
+                  }
+
+                  .tcialista-des {
+                    font-size: 13px;
+                  }
+                }
+              }
+
+              .button-connect {
+                position: relative;
+                width: 100%;
+
+                .add-connect {
+                  width: 80%;
+                  padding: 15px 10px;
+                  border: none;
+                  background: #635eff;
+                  color: white;
+                  cursor: pointer;
+                  font-size: 14px;
+                  font-weight: 400;
+                  border-radius: 4px;
+                }
+              }
+
+              .transaction-end-para {
+                position: relative;
+
+                .tep {
+                  font-size: 14px;
+
+                  .trans-indicator {
+                    color: #635eff;
+                    cursor: pointer;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .tcia-right {
+          width: 50%;
+          text-align: right;
+
+          .tcia-img {
+            position: relative;
+
+            img {
+              max-width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ======================================= Add Connect Page Style =====================================
+  .manage-connection-section {
+    position: relative;
+
+    .mc-area {
+      position: relative;
+
+      .mca-inner {
+        position: relative;
+
+        .mcai-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 2% 20% 0% 3%;
+          background: white;
+          padding: 10px 20px;
+          border-radius: 13px;
+
+          .mcai-left {
+            display: flex;
+
+            .mcai-top-img {
+              padding: 15px 0px;
+
+              img {
+                max-width: 75%;
+              }
+            }
+
+            .mcai-top-text {
+              position: relative;
+
+              .mcai-top-text-area {
+                display: flex;
+                align-items: center;
+                padding: 0 7%;
+
+                .mcai-top-th {
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+
+                .mcai-top-danger {
+                  margin-left: 10%;
+                  color: #ff0000;
+                  background: #ffd8d8;
+                  padding: 0 20px;
+                  border-radius: 100px;
+                }
+              }
+
+              .mcai-top-text-area-2 {
+                display: flex;
+                align-items: center;
+
+                // padding: 0 5%;
+                .mcai-top-th-2 {
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+
+                .mcai-top-danger-2 {
+                  margin-left: 10%;
+                  color: #ff0000;
+                  background: #ffd8d8;
+                  padding: 0 20px;
+                  border-radius: 100px;
+                }
+              }
+
+              .mcai-top-des {
+                // margin: auto 3%;
+                width: 75%;
+              }
+            }
+
+            .mcai-top-des-main {
+              margin: auto 7%;
+              width: 75%;
+            }
+          }
+
+          .mcai-right {
+            position: relative;
+
+            .mcair-inner {
+              background: #e9f1fe;
+              color: black;
+              display: flex;
+              padding: 0px 20px;
+              align-items: center;
+              border-radius: 4px;
+              cursor: pointer;
+
+              img {
+                width: 20%;
+                height: 20%;
+                padding-right: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ====================================== Expenses Page Style =========================================
+  .expenses-section,.purchases-section {
+    position: relative;
+
+    .es-area, .purchases-area{
+      position: relative;
+      margin: 0 30% 0 3%;
+      background: white;
+      border-radius: 10px;
+
+      .p-tabview-nav-container {
+        padding: 0 20px;
+      }
+
+      .es-inner, .purchases-inner {
+        position: relative;
+        background: white;
+        // margin: 0 25% 0% 3%;
+        border-radius: 13px;
+
+        .esi-top {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          border-bottom: 1px solid #d9d9d9cc;
+          // margin: 0% 15% 0% 3%;
+
+          img {
+            width: 54px;
+            height: 54px;
+          }
+
+          .esit-heading {
+            font-size: 14px;
+            font-weight: bold;
+            padding-left: 15px;
+            cursor: pointer;
+          }
+        }
+
+        .esi-content {
+          display: flex;
+          align-items: center;
+          padding: 10px 20px;
+          // margin: 0% 15% 0% 3%;
+          cursor: pointer;
+
+          img {
+            width: 54px;
+            height: 54px;
+          }
+
+          .esic-inner {
+            display: flex;
+
+            .esic-heading {
+              font-size: 14px;
+              font-weight: bold;
+              padding-left: 15px;
+
+              .esich-para {
+                font-weight: 400;
+              }
+            }
+
+            .esic-price {
+              font-size: 14px;
+              font-weight: bold;
+              padding-left: 15px;
+              position: absolute;
+              right: 15%;
+
+              .esicp-para {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ====================================== Pocket Expense Page Style ==================================
+  .pocketExpense-form {
+    position: relative;
+
+    .pef-inner {
+      position: relative;
+      background: white;
+      margin: auto 3%;
+      padding: 30px 20px;
+      border-radius: 13px;
+
+      .pefi-area-main {
+        display: flex;
+        justify-content: space-between;
+
+        .pefi-area {
+          position: relative;
+
+          label {
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .numberOfDays {
+            width: 305px;
+            height: 41px;
+            margin: 10px auto;
+            background: #f5f6f8;
+            border: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+            padding-left: 15px;
+          }
+
+          input {
+            width: 305px;
+            height: 41px;
+            margin: 10px auto;
+            background: #f5f6f8;
+            border: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+            padding-left: 15px;
+          }
+
+          .inner-field {
+            display: flex;
+            align-items: center;
+
+            .currency {
+              padding: 8px 12px;
+              height: 35px;
+              margin: 10px 10px;
+              background: #f5f6f8;
+              border: none;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              border-radius: 8px;
+              // padding-left: 15px;
+            }
+          }
+        }
+      }
+
+      .pefi-area-main-2 {
+        display: flex;
+        width: 100%;
+        // justify-content: space-between;
+
+        .pefi-area {
+          position: relative;
+          width: 50%;
+
+          label {
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .numberOfDays {
+            width: 95%;
+            height: 41px;
+            margin: 10px auto;
+            background: #f5f6f8;
+            border: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+            padding-left: 15px;
+          }
+
+          .currencyForClient {
+            width: 100%;
+            height: 41px;
+            margin: 10px auto;
+            background: #f5f6f8;
+            border: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+            padding-left: 15px;
+          }
+
+          input {
+            width: 305px;
+            height: 41px;
+            margin: 10px auto;
+            background: #f5f6f8;
+            border: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+            padding-left: 15px;
+          }
+
+          .inner-field {
+            display: flex;
+            align-items: center;
+
+            .currency {
+              padding: 8px 12px;
+              height: 35px;
+              margin: 10px 10px;
+              background: #f5f6f8;
+              border: none;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              border-radius: 8px;
+              // padding-left: 15px;
+            }
+          }
+        }
+      }
+
+      .form-center {
+        position: relative;
+
+        .fc-inner-section {
+          position: relative;
+
+          .fcis-start {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px;
+
+            .fcis-inner {
+              display: flex;
+              align-items: center;
+              background: #f5f6f8;
+              width: 306px;
+              height: 100px;
+              justify-content: space-between;
+              padding: 10px;
+              border-radius: 6px;
+              cursor: pointer;
+
+              img {
+                width: 62px;
+                height: 61px;
+              }
+
+              .uncat-heading-line {
+                padding: 18px 85px;
+              }
+            }
+          }
+
+          .fcis-inner-2 {
+            background: #f5f6f8;
+            width: 325px;
+            margin-right: 4%;
+            border-radius: 6px;
+            cursor: pointer;
+
+            .fcis-text {
+              position: relative;
+
+              .uncat-heading-line {
+                padding: 18px 75px;
+              }
+            }
+          }
+        }
+      }
+
+      .vat-rate {
+        position: relative;
+
+        .vr-para {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .radio-row {
+        // display: flex;
+        // justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+
+        input[type="radio"] {
+          accent-color: gray !important;
+        }
+
+        .radio-row-up {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .radio-row-down {
+          display: flex;
+          justify-content: flex-start;
+          gap: 40px;
+        }
+      }
+
+      .radio-rows {
+        position: relative;
+
+        label {
+          margin-right: 50px;
+        }
+
+        input[type="radio"] {
+          accent-color: gray !important;
+        }
+      }
+
+      .radio-row-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 29%;
+        margin: 20px 0px;
+
+        input[type="radio"] {
+          accent-color: gray !important;
+        }
+      }
+
+      .form-button {
+        position: relative;
+        margin: 40px 0px 0px 0px;
+
+        .btn-save {
+          width: 335px;
+          height: 42px;
+          background: #635eff;
+          border-radius: 4px;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+
+        .btn-delete {
+          width: 335px;
+          height: 42px;
+          background: #ff685e;
+          border-radius: 4px;
+          color: white;
+          border: none;
+          margin: 0px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // ================================================= Dividend Page Style ==========================================
+  .dividend-area {
+    position: relative;
+
+    .da-start {
+      position: relative;
+
+      .da-inner {
+        background: white;
+        margin: 0px 400px 0px 40px;
+        border-radius: 13px;
+
+        .dai-top {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #d9d9d9cc;
+          padding: 20px 0px;
+          margin: auto 13% 0% 5%;
+
+          img {
+            width: 54px;
+            height: 54px;
+          }
+
+          .dait-heading {
+            font-size: 14px;
+            font-weight: 700;
+            padding-left: 25px;
+          }
+        }
+
+        .dai-content {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 120px 0px 40px;
+          padding-bottom: 75px;
+
+          .daic-dividend {
+            background: #f5f6f8;
+            display: flex;
+            height: 107px;
+            border-radius: 13px;
+            padding: 10px;
+            width: 50%;
+
+            img {
+              width: 96px;
+              height: 96px;
+            }
+
+            .daicd-inner {
+              padding-left: 15px;
+
+              .divid-text {
+                font-size: 14px;
+              }
+
+              .divid-price {
+                font-size: 25px;
+                font-weight: bold;
+              }
+            }
+          }
+
+          .daic-tax-to-set {
+            background: #f5f6f8;
+            display: flex;
+            height: 107px;
+            border-radius: 13px;
+            padding: 10px;
+            width: 50%;
+            margin-left: 20px;
+
+            img {
+              width: 96px;
+              height: 96px;
+            }
+
+            .daicd-inner {
+              padding-left: 15px;
+
+              .divid-text {
+                font-size: 14px;
+              }
+
+              .divid-price {
+                font-size: 25px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ================================================= Dividend Payment Page Style ==========================================
+  .dividend-payment-area {
+    position: relative;
+
+    .dap-start {
+      position: relative;
+
+      .dap-inner {
+        background: white;
+        margin: 0px 400px 0px 40px;
+        border-radius: 13px;
+
+        .daip-content {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 120px 0px 40px;
+          padding-bottom: 15px;
+          padding-top: 30px;
+
+          .daicp-dividend {
+            background: #f5f6f8;
+            display: flex;
+            height: 107px;
+            border-radius: 13px;
+            padding: 10px;
+            width: 50%;
+
+            img {
+              width: 96px;
+              height: 96px;
+            }
+
+            .daicdp-inner {
+              padding-left: 15px;
+
+              .dividp-text {
+                font-size: 14px;
+              }
+
+              .dividp-price {
+                font-size: 25px;
+                font-weight: bold;
+              }
+            }
+          }
+
+          .daicp-tax-to-set {
+            background: #f5f6f8;
+            display: flex;
+            height: 107px;
+            border-radius: 13px;
+            padding: 10px;
+            width: 50%;
+            margin-left: 20px;
+
+            img {
+              width: 96px;
+              height: 96px;
+            }
+
+            .daicdp-inner {
+              padding-left: 15px;
+
+              .dividp-text {
+                font-size: 14px;
+              }
+
+              .dividp-price {
+                font-size: 25px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .daipc-inner {
+          position: relative;
+          padding-left: 50px;
+
+          .daipci-start {
+            position: relative;
+
+            .daipcis-text {
+              font-size: 14px;
+            }
+          }
+
+          .daipc-inner-tab {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 100px 0px 0px;
+
+            .daipcit-input {
+              position: relative;
+
+              input {
+                width: 305px;
+                height: 42px;
+                border-radius: 6px;
+                background: #f5f6f8;
+                border: none;
+                padding-left: 20px;
+              }
+            }
+
+            .daipcit-allocate {
+              position: relative;
+
+              .allocated-available-btn {
+                width: 144px;
+                height: 42px;
+                background-color: #53da7b;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+            }
+
+            .daipcit-allocate-next {
+              position: relative;
+
+              .allocated-next-btn {
+                width: 189px;
+                height: 42px;
+                background-color: #635eff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .dividend-pay-content-area {
+          position: relative;
+          margin: 20px auto;
+          padding-bottom: 20px;
+
+          .dpca {
+            position: relative;
+
+            .dpcai {
+              background: #f5f6f8;
+              margin: 0px 100px 0px 50px;
+              border-radius: 6px;
+
+              .dpcai-text {
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 25px;
+              }
+
+              .dpcai-total {
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid #d9d9d9;
+                margin: 0px 25px;
+
+                .dpcait-total-para {
+                  font-weight: bold;
+                }
+
+                .dpcait-total-amount {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+
+          .dpca-head {
+            position: relative;
+            padding-left: 50px;
+            padding-right: 275px;
+            font-size: 14px;
+            margin: 30px auto;
+
+            .dpcah-bold {
+              color: #635eff;
+              font-weight: bold;
+              cursor: pointer;
+            }
+
+            .dpcah-btn {
+              width: 335px;
+              height: 42px;
+              background-color: #635eff;
+              margin: 20px auto;
+              border: none;
+              border-radius: 4px;
+              color: white;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //=========================================== Start Sales Invoice Style ============================================
+  .add-new-line-category {
+    position: relative;
+
+    .add-new-line {
+      text-align: center;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      margin: 50px;
+      cursor: pointer;
+    }
+  }
+
+  //=========================================== End Sales Invoice Style ============================================
+
+  // =========================================== Payroll Page  Style ===========================================
+  .payroll-section {
+    position: relative;
+
+    .payroll-inner {
+      position: relative;
+
+      .payroll-start {
+        display: flex;
+        background: white;
+        margin: 3%;
+        padding: 40px;
+        border-radius: 13px;
+
+        .pr-left-area {
+          position: relative;
+          width: 50%;
+
+          .prla-inner {
+            position: relative;
+
+            .prla-top-heading {
+              position: relative;
+
+              .prla-heading {
+                font-size: 20px;
+                font-weight: bold;
+              }
+            }
+
+            .prla-content {
+              display: flex;
+              align-items: center;
+              line-height: 50px;
+
+              img {
+                width: 62px;
+                height: 62px;
+              }
+
+              .prla-para {
+                font-size: 14px;
+                padding-left: 25px;
+                font-weight: 600;
+              }
+            }
+
+            .btn-get-started {
+              background-color: #635eff;
+              color: white;
+              width: 75%;
+              border: none;
+              height: 42px;
+              border-radius: 4px;
+              margin: 4%;
+              font-size: 14px;
+              font-weight: 400;
+              cursor: pointer;
+            }
+
+            .bottom-line {
+              padding-right: 100px;
+
+              .bottomLine-para {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0px 24px;
+
+                .bl-bold {
+                  color: #635eff;
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        .pr-right-area {
+          position: relative;
+          width: 50%;
+
+          img {
+            max-width: 100%;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  // =========================================== Refer Friends Page  Style ===========================================
+  .refer-friend-section {
+    position: relative;
+
+    .rfs-inner {
+      position: relative;
+
+      .rfs-start {
+        display: flex;
+        background: white;
+        margin: 3%;
+        padding: 40px;
+        border-radius: 13px;
+
+        .rfs-left-area {
+          position: relative;
+          width: 60%;
+
+          .rfs-inner {
+            position: relative;
+
+            .rfs-top-heading {
+              position: relative;
+
+              .rfs-heading {
+                font-size: 20px;
+                font-weight: bold;
+              }
+            }
+
+            .rfs-content {
+              display: flex;
+              align-items: center;
+              line-height: 25px;
+
+              img {
+                width: 62px;
+                height: 62px;
+              }
+
+              .rfs-para {
+                font-size: 14px;
+                padding-left: 25px;
+                font-weight: 600;
+              }
+            }
+
+            .rfs-link {
+              position: relative;
+
+              .rfs-para {
+                font-size: 14px;
+                font-weight: bold;
+              }
+
+              .link-fields {
+                background: #f5f6f8;
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                position: relative;
+                border-radius: 4px;
+
+                .link-input {
+                  border: none;
+                  width: 100%;
+                  background: transparent;
+                  color: #000000;
+                  outline: none;
+                  padding-left: 20px;
+                }
+
+                .btn-copy-link {
+                  width: 20%;
+                  padding: 10px;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  border-radius: 4px;
+                  border: none;
+                  background: #635eff;
+                  color: white;
+                  cursor: pointer;
+                }
+              }
+
+              .social-icons {
+                position: relative;
+
+                .social-icon-img {
+                  max-width: 100%;
+                  width: 10%;
+                  cursor: pointer;
+                  margin: 5px;
+                }
+              }
+            }
+          }
+        }
+
+        .rfs-right-area {
+          position: relative;
+          width: 40%;
+
+          img {
+            max-width: 100%;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  // =========================================== Tax Page Style ===========================================
+  .taxes-section {
+    position: relative;
+
+    .taxes-inner {
+      position: relative;
+      background: white;
+      margin: 0 40% 0% 3%;
+      border-radius: 13px;
+
+      .taxes-start {
+        padding: 30px;
+
+        .p-tabview .p-tabview-panels {
+          padding: 0px;
+
+          .btn-taxes-all {
+            width: 69px;
+            height: 39px;
+            margin: 5px;
+            background: #635EFF;
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+
+          .btn-taxes-ac {
+            width: 128px;
+            height: 39px;
+            margin: 5px;
+            background: #E9F1FE;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+
+          .btn-taxes-ct {
+            width: 128px;
+            height: 39px;
+            margin: 5px;
+            background: #E9F1FE;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+
+          .btn-taxes-other {
+            width: 69px;
+            height: 39px;
+            margin: 5px;
+            background: #E9F1FE;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+        color: black;
+      }
+
+      .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+        background-color: unset;
+      }
+
+      .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+        border-color: unset;
+      }
+
+      .p-tabview .p-tabview-nav {
+        border: none;
+      }
+
+      .p-tabview-nav-content {
+        border-bottom: 1px solid #D9D9D9CC;
+      }
+
+      .p-tabview-title {
+        font-weight: 500;
+      }
+
+      .uct-para {
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+      }
+
+      .uct-inner-content {
+        position: relative;
+
+        .uctic-area {
+          position: relative;
+          line-height: 25px;
+
+          .uctic-content-start {
+            display: flex;
+            align-items: center;
+
+            img {
+              max-width: 100%;
+              width: 10%;
+            }
+
+            .uctic-inner-para {
+              padding-left: 20px;
+              font-size: 14px;
+              color: #000;
+
+              span {
+                font-size: 14px;
+                font-weight: bold;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  // =========================================== Start Purchases Page Style ===========================================
+  .purchases-section {
+    position: relative;
+
+    .purchases-area {
+      margin: 0 25% 0 3%;
+
+      .purchases-inner {
+        background: white;
+        border-radius: 7px;
+
+        .p-tabview-nav-container {
+          padding: 0 20px;
+        }
+
+        .purchases-content {
+          display: flex;
+          align-items: center;
+          padding-bottom: 20px;
+          border-bottom: 2px solid #D9D9D9CC;
+
+          .purchase-add-icon {
+            width: 8%;
+          }
+
+          .purchases-inner-content {
+            padding-left: 25px;
+            font-weight: bold;
+          }
+        }
+
+        .purchases-Overdue-heading {
+          font-weight: bold;
+        }
+
+        .purchases-get-area {
+          display: flex;
+          justify-content: space-between;
+
+          .pga-left {
+            position: relative;
+
+            .purchases-content-area {
+              display: flex;
+
+              img {
+                width: 26%;
+              }
+
+              .purchases-inner-content {
+                line-height: 0.5;
+                padding-left: 20px;
+
+                p {
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .pga-right {
+            position: relative;
+
+            .pgar-amount {
+              line-height: 0.5;
+
+              p {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  // =========================================== End Purchases Page Style ===========================================
+
+  // =========================================== Start Users Page Style ===========================================
+  .users-page {
+    position: relative;
+    margin: auto 35px;
+
+    .top-user-details {
+      position: relative;
+
+      .user-details-inner {
+        position: relative;
+
+        .udi-start {
+          display: inline-grid;
+
+          .userUploadImg {
+            margin-top: 10px
+          }
+        }
+
+        .uid-area {
+          display: flex;
+          justify-content: space-between;
+          margin: 30px auto;
+
+          .uid-section {
+            display: inline-grid;
+            width: 100%;
+            margin: auto 10px;
+
+            .ui-field {
+              border: none;
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              background-color: #d9d9d940;
+              outline: none;
+              padding: 15px;
+              margin-top: 10px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .btn-user-submit {
+      background-color: #635EFF;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .user-permission {
+      position: relative;
+
+      .up-inner-section {
+        position: relative;
+
+        .upis-start {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #8080802e;
+
+          .radio-rows {
+            margin-left: 20%;
+            display: flex;
+
+            .user-permission-label {
+              margin: auto 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .user-details-page {
+    position: relative;
+    background: white;
+    padding: 10px;
+    margin: auto 3%;
+    border-radius: 10px;
+
+    .ud-inner-section {
+      position: relative;
+
+      .udi-area {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .top-search {
+          display: flex;
+          align-items: center;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          width: 30%;
+          justify-content: space-between;
+          margin: 2% 3%;
+          padding: 10px;
+          background: #8080800d;
+
+          .user-input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+          }
+        }
+
+        .btn-user-add {
+          height: 40px;
+          margin-right: 50px;
+          background-color: #635EFF;
+          border: none;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          padding: 10px 20px;
+          border-radius: 4px;
+        }
+      }
+
+      .user-table-details {
+        position: relative;
+
+        .top-user-details {
+          position: relative;
+
+          .table-head {
+            display: flex;
+            justify-content: space-between;
+            margin: auto 3%;
+            background: #E9F1FE;
+            padding: 0px 20px;
+            border-radius: 6px;
+          }
+
+          .table-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto 3%;
+            padding: 0px 20px;
+            border-radius: 6px;
+            img{
+              width: 25px;
+              height: 25px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // =========================================== End Users Page Style ===========================================
+
+  // =========================================== Market Perks Page Style ===========================================
+  .market-perks-section {
+    position: relative;
+
+    .market-perks-area {
+      position: relative;
+      margin: 3% 25% 0% 3%;
+      background: white;
+      padding: 10px 50px;
+      border-radius: 13px;
+
+      .market-perks-inner {
+        position: relative;
+      }
+    }
+
+    .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+      color: black;
+    }
+
+    .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+      background-color: unset;
+    }
+
+    .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+      border-color: unset;
+    }
+
+    .p-tabview .p-tabview-nav {
+      border: none;
+    }
+
+    .p-tabview-nav-content {
+      border-bottom: 1px solid #D9D9D9CC;
+    }
+
+    .p-tabview-title {
+      font-weight: 500;
+    }
+
+    .market-perks-inner {
+      position: relative;
+
+      .mpic-start {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        border-radius: 13px;
+        align-items: end;
+        padding: 5px 0px;
+        margin: 10px auto;
+
+        .mpics-left {
+          display: flex;
+          align-items: center;
+
+          .mpic-top {
+            position: relative;
+            font-size: 14px;
+
+            .mpict-heading-area {
+              display: flex;
+              width: 85%;
+
+              .mpict-left {
+                font-weight: bold;
+              }
+
+              .mpict-right {
+                padding-left: 30px;
+              }
+            }
+
+            .mpict-bottom {
+              padding: 0px 75px 0px 0px;
+            }
+          }
+        }
+
+        .mpics-right {
+          text-align: center;
+          width: 230px;
+          font-size: 14px;
+
+          .mpic-button {
+            position: relative;
+
+            .btn-claim-offer {
+              background: #635eff;
+              color: white;
+              border: none;
+              border-radius: 4px;
+              width: 111px;
+              height: 35px;
+              cursor: pointer;
+            }
+          }
+        }
+
+      }
+    }
+
+    // perk tab style
+    .perks-section {
+      position: relative;
+
+      .perks-inner {
+        display: flex;
+        justify-content: space-between;
+
+        .perks-left {
+          width: 60%;
+          padding-right: 60px;
+          line-height: 24px;
+
+          .perks-top-heading {
+            position: relative;
+
+            .pth-area {
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+
+          .perks-content {
+            position: relative;
+
+            .perks-para {
+              font-size: 14px;
+            }
+          }
+
+          .perks-button {
+            position: relative;
+
+            .btn-perks {
+              width: 186px;
+              height: 42px;
+              border: none;
+              background: #635EFF;
+              color: white;
+              border-radius: 4px;
+              margin: 20px auto;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .perks-right {
+          width: 40%;
+
+          .perks-image {
+            width: 100%;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    mix-blend-mode: multiply;
+  }
+
+  a {
+    text-decoration: none;
+    color: $basic_text_color;
+  }
+
+}
+
+@mixin flex($direction, $justify, $gap, $align) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.MuiFormControl-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: red;
+}
